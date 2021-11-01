@@ -35,7 +35,7 @@ public class UseJsonArrayAsList {
 		
 		request=builder.build();
 		
-		response=RestAssured.expect().statusCode(200).contentType(ContentType.JSON);
+		response=RestAssured.expect().statusCode(404).contentType(ContentType.JSON);
 	}
 	
 	@Test

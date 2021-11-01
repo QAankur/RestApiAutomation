@@ -1,0 +1,38 @@
+package complexPojo;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown=true)
+public class Folder {
+
+	String name;
+	List<RequestRoot> item;
+	
+	public Folder() {
+		
+	}
+	
+	
+	public Folder(String name, List<RequestRoot> item) {
+		this.name = name;
+		this.item = item;
+	}
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public List<RequestRoot> getItem() {
+		return item;
+	}
+	public void setItem(List<RequestRoot> item) {
+		this.item = item;
+	}
+	
+	
+	
+}
